@@ -1,0 +1,18 @@
+<!-- interest/templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator - Result</title>
+</head>
+<body>
+    <h1>Simple Interest Calculator - Result</h1>
+    <p>Principal Amount: ${{ calculation.principal_amount }}</p>
+    <p>Interest Rate: {{ calculation.interest_rate }}%</p>
+    <p>Time Period: {{ calculation.time_period }} years</p>
+    <p>Interest: ${{ calculation.interest }}</p>
+    <p>Total Amount: ${{ calculation.total_amount }}</p>
+    <a href="{% url 'index' %}"><button>Calculate Again</button></a>
+</body>
+</html>
